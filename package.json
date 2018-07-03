@@ -9,7 +9,7 @@
     "tslint": "tslint",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "start": "npm run tsc",
-    "watch": "concurrently --kill-others \"tsc -w\" \"nodemon dist/app.js\""
+    "watch": "concurrently --kill-others \"tsc -w\" \"nodemon dist/index.js\""
   },
   "keywords": [],
   "author": "",
