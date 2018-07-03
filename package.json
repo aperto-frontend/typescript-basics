@@ -1,0 +1,17 @@
+{
+  "name": "typescript-basics",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "start": "npm run tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^2.9.2"
+  }
+}
