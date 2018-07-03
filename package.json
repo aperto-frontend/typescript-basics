@@ -9,18 +9,16 @@
     "tslint": "tslint",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "start": "npm run tsc",
-    "watch": "npm run watch:ts & npm run watch:node",
-    "watch:ts": "tsc -w",
-    "watch:node": "nodemon dist/index.js"
+    "watch": "concurrently --kill-others \"tsc -w\" \"nodemon dist/app.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "nodemon": "^1.17.5",
-    "typescript": "^2.9.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "tslint": "^5.10.0"
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.17.5",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
   }
 }
